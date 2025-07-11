@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-logo {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 50px;
+  height: auto;
+}
+
+header {
+  background-color: #0d2444;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.payment-form {
+  background: white;
+  border: 2px solid #d32f2f;
+  border-radius: 8px;
+  padding: 25px 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.method-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.method-buttons img {
+  width: 65px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.method-buttons img:hover {
+  transform: scale(1.1);
+}
+
+.method-buttons img.selected {
+  border-color: #d32f2f;
+  box-shadow: 0 0 8px #d32f2f;
+}
+
+.payment-form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+}
+
+.payment-form input {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1.3px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.payment-form input:focus {
+  border-color: #d32f2f;
+  outline: none;
+}
+
+.payment-form button {
+  background-color: #d32f2f;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.payment-form button:hover {
+  background-color: #b71c1c;
+}
+
+.result {
+  text-align: center;
+  margin-top: 18px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #0d2444;
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}
