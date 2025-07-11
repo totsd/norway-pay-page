@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nor-way to go! Pay Package</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="site-logo" />
+    <h1>Choose Payment Method</h1>
+  </header>
+
+  <main>
+    <div class="payment-form">
+      <div class="method-buttons" id="methods">
+        <img src="https://img.icons8.com/color/96/000000/visa.png" alt="Visa" data-method="Visa" />
+        <img src="https://img.icons8.com/color/96/000000/mastercard-logo.png" alt="MasterCard" data-method="MasterCard" />
+        <img src="https://img.icons8.com/color/96/000000/amex.png" alt="Amex" data-method="Amex" />
+        <img src="https://img.icons8.com/color/96/000000/paypal.png" alt="PayPal" data-method="PayPal" />
+        <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.19.1/mercadopago/logo__small.png" alt="Mercado Pago" data-method="Mercado Pago" />
+        <img src="https://img.icons8.com/fluency/96/000000/apple-pay.png" alt="Apple Pay" data-method="Apple Pay" />
+        <img src="https://img.icons8.com/color/96/000000/google-pay-india.png" alt="Google Pay" data-method="Google Pay" />
+      </div>
+
+      <label for="name">Cardholder Name</label>
+      <input type="text" id="name" placeholder="John Doe" />
+
+      <label for="number">Card Number</label>
+      <input type="text" id="number" placeholder="1234 5678 9012 3456" maxlength="19" />
+
+      <label for="expiry">Expiry Date (MM/YY)</label>
+      <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" />
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" placeholder="123" maxlength="4" />
+
+      <label for="amount">Amount (USD)</label>
+      <input type="number" id="amount" placeholder="100.00" step="0.01" />
+
+      <button id="payBtn">Pay</button>
+      <div class="result" id="result"></div>
+    </div>
+  </main>
+
+  <footer>
+    Refunds are available. For any help, contact us at
+    <a href="mailto:norwaytogo@assist.com">norwaytogo@assist.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
